@@ -8,3 +8,5 @@ usa_states = ["Delaware", "Pennsylvania", "New Jersey", "Georgia", "Connecticut"
               "Arkansas", "Michigan", "Florida", "Nevada", "Colorado", "Alaska", "Hawaii"]
 
 print(usa_states[2])
+usa_states[-2] = "COLORADO"
+print(usa_states[-2])
