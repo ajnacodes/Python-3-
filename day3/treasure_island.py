@@ -66,23 +66,29 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 
 print("Welcome to The Treasure Island!")
 print("Your mission is to find the treasure.")
-direction = input("Would you like to go to the left, or to the right? ")
+print("You're at a crossroad! Which direction do you want to take?")
+direction1 = input('Type "left" or "right". ').lower()
 
-direction = direction.lower()
 
-if direction == "right":
+if direction1 == "right":
     print("Woops! You fell into a hole. Game is over.")
-elif direction == "left":
-   direction2 = input("There's a lake! Should we swim over it or just walk? ")
+elif direction1 == "left":
+   direction2 = input('You\'ve come to a lake. There is an island in the middle of the lake, Type "wait" to wait for a boat. Type "swim" to swim across. ')
    direction2 = direction2.lower()
    if direction2 == "swim":
        print("Storm is near! Game over.")
-   if direction2 == "walk":
+   elif direction2 == "wait":
        door = input('''Oh look, there's a house with 3 doors! Which one should we choose, the red,
              yellow or blue one? ''')
        if door == "red":
-           print("Game over.")
+           print("You entered a room full of beasts. Game over.")
        elif door == "blue":
-           print("Game over.")
+           print("You chose a room full of fire. Game over.")
        elif door == "yellow":
            print("You win Treasure Island!")
+       else: 
+           print("You chose a door that doesn't exist. Game over.")
+   else:
+       print("You got attacked by a grumpy monster! Game over.")
+else: 
+    print("You got attacked! Game over.")
