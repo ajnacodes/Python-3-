@@ -6,3 +6,5 @@
 fruits = ["Apple", "Peach", "Pear"]
 for fruit in fruits:
     print(fruit)
+    # you can add additional stuff to it
+    print(fruit + " Pie")
