@@ -11,3 +11,14 @@ print(usa_states[2])
 # change the content of an individual state
 usa_states[-2] = "COLORADO"
 print(usa_states[-2])
+# add another state to the end of the list
+# function append("") will add a new state to the end of the list
+usa_states.append("Arizona")
+print(usa_states[-1])
+
+# function extend(["",""..]) will add new states to the end of the list - by adding a new list to it
+usa_states.extend(["Utah", "New Mexico", "Montana"])
+
+print(usa_states[-1])
+print(usa_states[-2])
+print(usa_states[-3])
