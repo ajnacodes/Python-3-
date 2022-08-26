@@ -42,3 +42,17 @@
     
     
 # path()
+
+
+
+# simplified version of path()
+
+    
+# def path():
+#     while not at_goal():
+#         if wall_in_front():
+#             step()
+#         else:
+#             move()
+
+# path()
